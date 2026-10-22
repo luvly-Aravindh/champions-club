@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Payment Successful</title>
+    <link rel="icon" type="image/svg+xml" href="https://southwardsielts.com/champions-club/assets/fav-Bzv76np2.png" />
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1618094699214465');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1618094699214465&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<script>fbq('track', 'Lead');</script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #c6aa4f 0%, #000 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .confetti-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .confetti {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    animation: confettiFall 5s linear infinite;
+    opacity: 0.9;
+  }
+
+  .confetti:nth-child(even) {
+    background: #f44336;
+  }
+
+  @keyframes confettiFall {
+    0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+  }
+
+  .thank-you-box {
+    position: relative;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 40px 30px;
+    border-radius: 16px;
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+    /* Entrance bounce only (no fade) */
+    transform: translateY(-50px) scale(0.9);
+    animation: cardBounceIn 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  }
+
+  @keyframes cardBounceIn {
+    0% {
+      transform: translateY(-50px) scale(0.9);
+    }
+    50% {
+      transform: translateY(10px) scale(1.05);
+    }
+    70% {
+      transform: translateY(-5px) scale(0.98);
+    }
+    100% {
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .thank-you-box h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin: 0 0 15px;
+    color: #fff;
+  }
+
+  .thank-you-box p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fefefe;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .emoji {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+
+  /* Continuous bounce animation for the button */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 30px;
+    border-radius: 25px;
+    background: #fff;
+    color: #d32f2f;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+
+    /* Continuous gentle bounce */
+    animation: bounce 2s infinite ease-in-out;
+  }
+
+  .btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.75s ease;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 1;
+  }
+
+  .btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+
+  .btn:hover {
+    background: #f0f0f0;
+    color: #b71c1c;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  }
+
+</style>
+</head>
+<body>
+
+<div class="confetti-container">
+  <div class="confetti" style="left: 10%; animation-delay: 0s;"></div>
+  <div class="confetti" style="left: 20%; animation-delay: 0.2s;"></div>
+  <div class="confetti" style="left: 30%; animation-delay: 0.4s;"></div>
+  <div class="confetti" style="left: 40%; animation-delay: 0.6s;"></div>
+  <div class="confetti" style="left: 50%; animation-delay: 0.8s;"></div>
+  <div class="confetti" style="left: 60%; animation-delay: 1s;"></div>
+  <div class="confetti" style="left: 70%; animation-delay: 1.2s;"></div>
+  <div class="confetti" style="left: 80%; animation-delay: 1.4s;"></div>
+  <div class="confetti" style="left: 90%; animation-delay: 1.6s;"></div>
+</div>
+
+<div class="thank-you-box">
+  <div class="emoji">🎉</div>
+  <h1>Thank you for your interest in the Southwards IELTS Champions Club.</h1>
+  <p>
+    Your registration is confirmed. Check your email for your
+    session schedule and first assignment.
+  </p>
+  <!--<p>-->
+  <!--  Complete every task on time to receive detailed feedback on Writing and-->
+  <!--  Speaking. Keep your target band ready we’ll build your personalized-->
+  <!--  roadmap inside the club.-->
+  <!--</p>-->
+  <p>
+    <strong>From student to Champion let’s go!</strong>
+  </p>
+
+</div>
+
+
+</body>
+</html>
